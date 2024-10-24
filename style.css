@@ -1,0 +1,242 @@
+/* Stile di base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header h1 span {
+    color: #ffd700; /* Colore oro lucido */
+}
+
+/* Menu di navigazione */
+nav {
+    background-color: #444;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Contenitore principale */
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Imposta altezza minima alla viewport */
+}
+.container {
+    flex: 1; /* Permette al contenuto di espandersi per occupare lo spazio rimanente */
+    padding: 20px;
+}
+
+/* Sezione Home */
+#home, #chi-siamo, #testimonianze {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Sezione Home */
+.intro, .services {
+    padding: 20px;
+}
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+.services li {
+    padding: 10px 0;
+}
+
+/* Sezione Chi siamo */
+#chi-siamo p {
+    margin: 0 0 15px;
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+/* Sezione Testimonianze */
+#testimonianze {
+    margin-top: 40px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonial p {
+    margin: 0;
+}
+
+/* Pulsante CTA */
+.cta-container {
+    text-align: center;
+    margin-top: 30px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #ffcc00;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombra per effetto rialzato */
+}
+
+
+
+#il-nostro-operato {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#il-nostro-operato h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+#il-nostro-operato p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+}
+
+
+
+#contatti {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contatti a {
+    color: #ffd700; /* Colore oro */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contatti a:hover {
+    text-decoration: underline;
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Fa sì che questa sezione occupi lo spazio restante */
+    padding-bottom: 0; /* Elimina eventuali padding */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Spinge il footer in fondo */
+}
+
